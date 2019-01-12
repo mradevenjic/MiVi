@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MiVi Alpha</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="sPozPoruka">MiVi Alpha</string>
+    <string name="title_activity_pocetna">Pocetna</string>
+    <string name="sDvaIgraca">2 igrača</string>
+    <string name="title_activity_igraci_dva">IgraciDva</string>
+    <string name="sPorukaDva">Upiši imena igrača</string>
+    <string name="title_activity_glavni_dva">GlavniDva</string>
+    <string name="eTekstPrvi">Mi</string>
+    <string name="eTekstDrugi">Vi</string>
+    <string name="imePrvi">Medium Text</string>
+    <string name="imeDrugi">Medium Text</string>
+    <string name="title_activity_ispis_dva">IspisDva</string>
+
+</resources>

@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.markor.mivialpha.GlavniDva">
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/imePrvi"
+        android:id="@+id/tvIgrac1"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/tvIgrac2"
+        android:layout_toStartOf="@+id/tvIgrac2" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/imeDrugi"
+        android:id="@+id/tvIgrac2"
+        android:layout_marginRight="78dp"
+        android:layout_marginEnd="78dp"
+        android:layout_alignTop="@+id/tvIgrac1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/tvPuntiDva1"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/tvIgrac1"
+        android:layout_alignRight="@+id/tvIgrac1"
+        android:layout_alignEnd="@+id/tvIgrac1"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/tvPuntiDva2"
+        android:layout_alignTop="@+id/tvPuntiDva1"
+        android:layout_toRightOf="@+id/tvIgrac1"
+        android:layout_toEndOf="@+id/tvIgrac1"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:id="@+id/bPlus1dva"
+        android:layout_below="@+id/etDva1"
+        android:layout_alignRight="@+id/tvPuntiDva1"
+        android:layout_alignEnd="@+id/tvPuntiDva1"
+        android:layout_alignLeft="@+id/etDva1"
+        android:layout_alignStart="@+id/etDva1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:id="@+id/bPlus2dva"
+        android:layout_alignTop="@+id/bPlus1dva"
+        android:layout_alignLeft="@+id/tvPuntiDva2"
+        android:layout_alignStart="@+id/tvPuntiDva2"
+        android:layout_alignRight="@+id/etDva2"
+        android:layout_alignEnd="@+id/etDva2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj"
+        android:id="@+id/bDodajDva1"
+        android:layout_below="@+id/bPlus1dva"
+        android:layout_alignLeft="@+id/bPlus1dva"
+        android:layout_alignStart="@+id/bPlus1dva"
+        android:layout_alignRight="@+id/bPlus1dva"
+        android:layout_alignEnd="@+id/bPlus1dva" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oduzmi"
+        android:id="@+id/bOduzmiDva1"
+        android:layout_below="@+id/bDodajDva1"
+        android:layout_alignLeft="@+id/bDodajDva1"
+        android:layout_alignStart="@+id/bDodajDva1"
+        android:layout_alignRight="@+id/bDodajDva1"
+        android:layout_alignEnd="@+id/bDodajDva1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj"
+        android:id="@+id/bDodajDva2"
+        android:layout_above="@+id/bOduzmiDva1"
+        android:layout_alignLeft="@+id/bPlus2dva"
+        android:layout_alignStart="@+id/bPlus2dva"
+        android:layout_alignRight="@+id/bPlus2dva"
+        android:layout_alignEnd="@+id/bPlus2dva" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oduzmi"
+        android:id="@+id/bOduzmiDva2"
+        android:layout_below="@+id/bDodajDva2"
+        android:layout_alignLeft="@+id/bDodajDva2"
+        android:layout_alignStart="@+id/bDodajDva2"
+        android:layout_alignRight="@+id/bDodajDva2"
+        android:layout_alignEnd="@+id/bDodajDva2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ispis"
+        android:id="@+id/bIspisDva"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upiši"
+        android:id="@+id/bUpisiDva"
+        android:layout_below="@+id/bOduzmiDva1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        android:id="@+id/bLoadDva"
+        android:layout_alignBottom="@+id/bIspisDva"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/etDva1"
+        android:layout_alignTop="@+id/etDva2"
+        android:layout_alignRight="@+id/tvPuntiDva1"
+        android:layout_alignEnd="@+id/tvPuntiDva1"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/etDva2"
+        android:layout_below="@+id/tvPuntiDva2"
+        android:layout_alignLeft="@+id/tvPuntiDva2"
+        android:layout_alignStart="@+id/tvPuntiDva2"
+        android:layout_marginTop="24dp"
+        android:gravity="center" />
+
+</RelativeLayout>

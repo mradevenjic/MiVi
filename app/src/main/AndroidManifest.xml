@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.markor.mivialpha" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Pozdravna"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Pocetna"
+            android:label="@string/title_activity_pocetna" >
+            <intent-filter>
+                <action android:name="com.markor.POCETNA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IgraciDva"
+            android:label="@string/title_activity_igraci_dva" >
+        </activity>
+        <activity
+            android:name=".GlavniDva"
+            android:label="@string/title_activity_glavni_dva" >
+        </activity>
+        <activity
+            android:name=".IspisDva"
+            android:label="@string/title_activity_ispis_dva" >
+        </activity>
+    </application>
+
+</manifest>
